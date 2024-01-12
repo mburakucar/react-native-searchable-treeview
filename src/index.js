@@ -159,7 +159,7 @@ const TreeView = ({
   /////FILTER FUNCTIONS/////
 
   return (
-    <>
+    <View style={styles.mainContainer}>
       <View style={styles.container}>
         <TextInput
           style={styles.textInput}
@@ -191,7 +191,7 @@ const TreeView = ({
           })}
         </ScrollView>
       )}
-    </>
+    </View>
   );
 };
 
@@ -212,6 +212,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginLeft: 5,
     flexShrink: 1,
+  },
+  mainContainer: {
+    flex: 1,
+    width: '100%',
   },
   container: {
     flexShrink: 1,

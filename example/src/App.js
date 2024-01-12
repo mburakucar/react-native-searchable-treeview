@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 25,
+    marginHorizontal: 15,
   },
   box: {
     width: 60,
