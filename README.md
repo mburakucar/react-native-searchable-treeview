@@ -2,7 +2,7 @@
 
 Searchable treeview for react-native.
 
-<img width="360" height="640" src="./example/app.png">
+<img width="360" src="./example/app.png">
 
 ## Installation
 
