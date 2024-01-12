@@ -53,7 +53,8 @@ const TreeView = ({
     const updatedOriginTree = updateNodeChecked(
       originalData,
       node.id,
-      !node.selected
+      !node.selected,
+      false
     );
     setData(updatedTree);
     setOriginalData(updatedOriginTree);

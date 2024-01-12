@@ -57,8 +57,6 @@ export default function App() {
         ]}
         checkedColor={'#1E90FF'}
         switchCheckedColor={'#1E90FF'}
-        searchPlaceHolder={'Aramak için en az 3 kelime girin..'}
-        notFoundText={'Kayıt Bulunamadı.'}
       />
     </View>
   );
