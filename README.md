@@ -6,26 +6,76 @@ Searchable treeview for react-native.
 
 ```sh
 npm install react-native-searchable-treeview
+
+or
+
+yarn add react-native-searchable-treeview
 ```
 
 ## Usage
 
 ```js
-import { multiply } from 'react-native-searchable-treeview';
+import TreeView from 'react-native-searchable-treeview';
 
 // ...
 
-const result = await multiply(3, 7);
+const [selectedIds, setSelectedIds] = React.useState([]);
+
+return (
+  <TreeView
+    selectedIds={selectedIds}
+    setSelectedIds={setSelectedIds}
+    treeData={[]}
+  />
+);
 ```
 
-## Contributing
+## Sample Data
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+```js
+[
+  {
+    isExpanded: false,
+    subs: [
+      {
+        isExpanded: false,
+        subs: [
+          {
+            isExpanded: false,
+            subs: [],
+            id: 3,
+            name: 'Node 1-1-1',
+            selected: false,
+            disabled: false,
+          },
+        ],
+        id: 2,
+        name: 'Node 1-1',
+        selected: false,
+        disabled: false,
+      },
+      {
+        isExpanded: false,
+        subs: [
+          {
+            isExpanded: false,
+            subs: [],
+            id: 5,
+            name: 'Node 1-2-1',
+            selected: false,
+            disabled: false,
+          },
+        ],
+        id: 4,
+        name: 'Node 1-2',
+        selected: false,
+        disabled: false,
+      },
+    ],
+    id: 1,
+    name: 'Node 1',
+    selected: false,
+    disabled: false,
+  },
+];
+```
