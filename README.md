@@ -26,6 +26,10 @@ return (
     selectedIds={selectedIds}
     setSelectedIds={setSelectedIds}
     treeData={[]}
+    checkedColor={'#1E90FF'} //optional
+    switchCheckedColor={'#1E90FF'} //optional
+    searchPlaceHolder={'Enter at least 3 letters to search..'} //optional
+    notFoundText={'No Records Found.'} //optional
   />
 );
 ```
