@@ -1,6 +1,6 @@
 {
   "name": "react-native-searchable-treeview",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Searchable treeview for react-native.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
